@@ -8,7 +8,15 @@
   "scripts": {
     "build": "npx rollup -c"
   },
-  "keywords": [],
+  "keywords": [
+    "modal",
+    "react",
+    "component",
+    "react-component",
+    "ui",
+    "accessible",
+    "accessibility"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
