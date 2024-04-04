@@ -127,21 +127,21 @@ Here's a list of all the props available to customize this modal according to yo
 <td style="text-align: center;" >string</td>
 <td style="text-align: center; white-space: nowrap;" >fadeIn-down</td>
 <td style='display: flex; flex-direction: column; gap: 0; white-space: nowrap;'>
-<span>fadeIn</span>
-<span>fadeIn-up</span>
-<span>fadeIn-down</span>
-<span>fadeIn-left</span>
-<span>fadeIn-right</span>
+<span>fadeIn,</span>
+<span>fadeIn-up,</span>
+<span>fadeIn-down,</span>
+<span>fadeIn-left,</span>
+<span>fadeIn-right,</span>
 <br>
-<span>zoomIn</span>
-<span>zoomIn-up</span>
-<span>zoomIn-down</span>
-<span>zoomIn-left</span>
-<span>zoomIn-right</span>
+<span>zoomIn,</span>
+<span>zoomIn-up,</span>
+<span>zoomIn-down,</span>
+<span>zoomIn-left,</span>
+<span>zoomIn-right,</span>
 <br>
-<span>slideIn-up</span>
-<span>slideIn-down</span>
-<span>slideIn-left</span>
+<span>slideIn-up,</span>
+<span>slideIn-down,</span>
+<span>slideIn-left,</span>
 <span>slideIn-right</span>
 </td>
 <td>Animation effect when the modal opens</td>
@@ -151,21 +151,21 @@ Here's a list of all the props available to customize this modal according to yo
 <td style="text-align: center;" >string</td>
 <td style="text-align: center;" >''</td>
 <td style='display: flex; flex-direction: column; gap: 0; white-space: nowrap;'>
-<span>fadeOut</span>
-<span>fadeOut-up</span>
-<span>fadeOut-down</span>
-<span>fadeOut-left</span>
-<span>fadeOut-right</span>
+<span>fadeOut,</span>
+<span>fadeOut-up,</span>
+<span>fadeOut-down,</span>
+<span>fadeOut-left,</span>
+<span>fadeOut-right,</span>
 <br>
-<span>zoomOut</span>
-<span>zoomOut-up</span>
-<span>zoomOut-down</span>
-<span>zoomOut-left</span>
-<span>zoomOut-right</span>
+<span>zoomOut,</span>
+<span>zoomOut-up,</span>
+<span>zoomOut-down,</span>
+<span>zoomOut-left,</span>
+<span>zoomOut-right,</span>
 <br>
-<span>slideOut-up</span>
-<span>slideOut-down</span>
-<span>slideOut-left</span>
+<span>slideOut-up,</span>
+<span>slideOut-down,</span>
+<span>slideOut-left,</span>
 <span>slideOut-right</span>
 </td>
 <td>Animation effect when the modal closes</td>
@@ -214,7 +214,3 @@ Here's a list of all the props available to customize this modal according to yo
 </tr>
 </tbody>
 </table>
-
-## Keywords
-
-modal, react, component, react-component, ui, accessible, accessibility

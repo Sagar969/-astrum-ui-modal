@@ -17,10 +17,19 @@
     "accessible",
     "accessibility"
   ],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sagar969/astrum-ui-modal.git"
+  },
+  "author": "Sagar Mavai  <sagarmavai2002@gmail.com> (https://Sagar969.github.io)",
+  "bugs": {
+    "url": "https://github.com/Sagar969/astrum-ui-modal/issues"
+  },
+  "homepage": "https://github.com/Sagar969/astrum-ui-modal#readme",
   "license": "ISC",
   "devDependencies": {
     "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-terser": "^0.4.4",
     "@rollup/plugin-typescript": "^11.1.6",
     "@types/react": "^18.2.73",
     "cssnano": "^6.1.2",
