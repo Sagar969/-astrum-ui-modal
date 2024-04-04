@@ -8,6 +8,12 @@ Introducing Astrum-UI/Modal: A versatile React component for creating sleek and 
 npm install --save @astrum-ui/modal
 ```
 
+or access the [complete suite](https://www.npmjs.com/package/@astrum-ui/core) of components
+
+```
+npm install --save @astrum-ui/core
+```
+
 ## Usage
 
 ```jsx
@@ -24,7 +30,7 @@ export default function HelloModal() {
 	  <div>Hello world content</div>
 	 </Modal>
 
-	 <button type="button" onClick={(() => setShow(true))} >
+	 <button type="button" onClick={() => setShow(true)} >
 		Show Modal
 	 </button>
   </>

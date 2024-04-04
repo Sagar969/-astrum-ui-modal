@@ -34,29 +34,3 @@ export default [
     ],
   },
 ];
-// export default defineConfig({
-//   input: 'src/index.ts',
-//   output: {
-//     dir: 'dist',
-//     format: 'es',
-//     name: 'beyonderui',
-//   },
-//   external: ['react', 'react-dom'],
-//   plugins: [
-//     postcss({
-//       // include: '**/*.css',
-//       // modules: true,
-//       // extract: true,
-//       // minimize: true,
-//       plugins: [
-//         simplevars(),
-//         nested(),
-//         cssnext({ warnForDuplicates: false }),
-//         cssnano(),
-//       ],
-//       extensions: ['.css'],
-//     }),
-//     typescript({ tsconfig: 'tsconfig.json' }),
-//     babel(),
-//   ],
-// });

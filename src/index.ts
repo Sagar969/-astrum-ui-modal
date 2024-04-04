@@ -1,6 +1,2 @@
-// export * from './components/modals/reactModal/Modal'
-
 import './index.css';
-import { Modal } from './components/modals/reactModal/Modal';
-
-export default Modal;
+export { Modal as default } from './components/Modal';
