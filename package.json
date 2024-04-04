@@ -1,6 +1,6 @@
 {
   "name": "@astrum-ui/modal",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Introducing Astrum-UI/Modal: A versatile React component for creating sleek and customizable modal overlays effortlessly.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
