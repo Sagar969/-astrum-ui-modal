@@ -1,0 +1,69 @@
+/* Fade */
+.fadeIn {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+.fadeOut {
+  opacity: 0;
+  transform: translate(-50%, -50%);
+}
+
+.fadeOut.left {
+  transform: translate(-100%, -50%);
+}
+.fadeOut.right {
+  transform: translate(0%, -50%);
+}
+.fadeOut.up {
+  transform: translate(-50%, -100%);
+}
+.fadeOut.down {
+  transform: translate(-50%, 0%);
+}
+
+/* Zoom */
+.zoomIn {
+  opacity: 1;
+  scale: 1;
+  transform: translate(-50%, -50%);
+}
+.zoomOut {
+  opacity: 0;
+  scale: 0;
+  transform: translate(-50%, -50%);
+}
+
+.zoomOut.up {
+  transform: translate(-50%, -100vh);
+}
+.zoomOut.down {
+  transform: translate(-50%, 100vh);
+}
+.zoomOut.left {
+  transform: translate(-50vw, -50%);
+}
+.zoomOut.right {
+  transform: translate(50vw, -50%);
+}
+
+/* Slide */
+.slideIn {
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
+.slideOut {
+  opacity: 1;
+}
+
+.slideOut.up {
+  transform: translate(-50%, -100vh);
+}
+.slideOut.down {
+  transform: translate(-50%, 100vh);
+}
+.slideOut.left {
+  transform: translate(-100vw, -50%);
+}
+.slideOut.right {
+  transform: translate(100vw, -50%);
+}
