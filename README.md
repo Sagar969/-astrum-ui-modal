@@ -41,6 +41,10 @@ export default function HelloModal() {
 
 > **Note** : `h2` must be the direct children of `Modal` to be the heading of modal
 
+#### More examples
+
+- [Sign-in form modal](https://stackblitz.com/edit/vitejs-vite-gf6zs6?file=src%2FApp.tsx)
+
 ## Props
 
 Here's a list of all the props available to customize this modal according to your need
@@ -79,6 +83,13 @@ Here's a list of all the props available to customize this modal according to yo
 <td style="text-align: center;" >0.3</td>
 <td>0 - 1</td>
 <td>Opacity level of the overlay behind the modal (between 0 and 1)</td>
+</tr>
+<tr>
+<td>disableClose</td>
+<td style="text-align: center;" >boolean</td>
+<td style="text-align: center;" >false</td>
+<td>true, false</td>
+<td>Disable default close methods (closeButton and overlay click)</td>
 </tr>
 <tr>
 <td>closeButtonVariant</td>

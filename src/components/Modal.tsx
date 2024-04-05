@@ -32,6 +32,7 @@ type PropsType = {
   styles?: StylesType;
   classNames?: classNamesType;
   overlayOpacity?: number;
+  disableClose?: boolean;
   closeButtonVariant?: number;
   CustomCloseButton?: ComponentType<any> | null;
   animateIn?: string;
@@ -58,6 +59,7 @@ export const Modal = ({
   styles = {},
   classNames = {},
   overlayOpacity = 0.3,
+  disableClose = false,
   closeButtonVariant = 1,
   CustomCloseButton = null,
   animateIn = 'fadeIn-down',
@@ -154,52 +156,54 @@ export const Modal = ({
     return () => clearTimeout(timeoutId);
   }, [isModal]);
 
-  return (
-    isModal && (
-      <>
-        <div
-          ref={overlayRef}
-          className={componentStyles.overlay + ' ' + classNames?.overlay}
-          onClick={() => setShow(false)}
-          style={{
-            transitionDuration: animateDuration + 'ms',
-            ...(styles?.overlay && styles.overlay),
-          }}
-        ></div>
-        <div
-          ref={modalRef}
-          className={componentStyles.modal + ' ' + classNames?.modal}
-          style={{
-            transitionDuration: animateDuration + 'ms',
-            ...(styles?.modal && styles.modal),
-          }}
-        >
-          {CustomCloseButton ? (
-            <CustomCloseButton />
-          ) : (
-            <button
-              className={
-                (closeButtonVariant <= 1
-                  ? componentStyles.closeButtonVariant1
-                  : componentStyles.closeButtonVariant2) +
-                ' ' +
-                componentStyles.closeButton +
-                ' ' +
-                classNames?.closeButton
-              }
-              style={{ ...(styles?.closeButton && styles.closeButton) }}
-              onClick={() => setShow(false)}
-            >
-              <div>
-                <div></div>
-                <div></div>
-              </div>
-            </button>
-          )}
-          {children}
-        </div>
-      </>
-    )
+  return isModal ? (
+    <>
+      <div
+        ref={overlayRef}
+        className={componentStyles.overlay + ' ' + classNames?.overlay}
+        onClick={() => !disableClose && setShow(false)}
+        style={{
+          transitionDuration: animateDuration + 'ms',
+          ...(styles?.overlay && styles.overlay),
+        }}
+      ></div>
+      <div
+        ref={modalRef}
+        className={componentStyles.modal + ' ' + classNames?.modal}
+        style={{
+          transitionDuration: animateDuration + 'ms',
+          ...(styles?.modal && styles.modal),
+        }}
+      >
+        {disableClose ? (
+          <></>
+        ) : CustomCloseButton ? (
+          <CustomCloseButton />
+        ) : (
+          <button
+            className={
+              (closeButtonVariant <= 1
+                ? componentStyles.closeButtonVariant1
+                : componentStyles.closeButtonVariant2) +
+              ' ' +
+              componentStyles.closeButton +
+              ' ' +
+              classNames?.closeButton
+            }
+            style={{ ...(styles?.closeButton && styles.closeButton) }}
+            onClick={() => setShow(false)}
+          >
+            <div>
+              <div></div>
+              <div></div>
+            </div>
+          </button>
+        )}
+        {children}
+      </div>
+    </>
+  ) : (
+    <></>
   );
 };
 
